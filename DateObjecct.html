@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let dt=new Date();
+		let tdate=dt.getDate();
+		let mnth=dt.getMonth();
+		let yr=dt.getFullYear();
+		document.write("Today's Date :"+tdate+"/"+mnth+"/"+yr+"<br>")
+		let hr=dt.getHours();
+		let mnt=dt.getMinutes();
+		let sc=dt.getSeconds();
+		let mli=dt.getMiliSeconds();
+		document.write("Time : "+hr+":"+mnt+":"+sec+":"+mli+"<br>")
+		let wk =dt.getDay();
+		let dy=" ";
+		switch(wk)
+
+		{
+		case 0:dy="SUNDAY";break;
+		case 1:dy="MONDAY";break;
+		case 2:dy="TUESDAY";break;
+		case 3:dy="WEDNESDAY";break;
+		case 4:dy="THURSDAY";break;
+		case 5:dy="FRIDAY";break;
+		case 6:dy="SATURDAY";break;
+
+		}
+		document.write(dy);
+
+
+
+	</script>
+
+</body>
+</html>
