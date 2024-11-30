@@ -1,0 +1,123 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form tag</title>
+	<style type="text/css">
+		.Subject
+		{
+			text-align: center;
+			color: black;
+			font-size: 30px;
+			lighting-color: red green;
+			letter-spacing: 3px;
+			color: transparent;
+			-webkit-text-stroke:2px black;
+			-webkit-text-fill-color:darkorange;
+			text-shadow: 10px 10px 10px goldenrod;
+		}
+		.java:hover
+		{
+			color: blueviolet;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<form>
+			<fieldset>
+				<h1 class="Subject" align="center">**********LOGIN FORM**********</h1>
+				<legend align="center">LOGIN or VALIDATION</legend>
+				<label>Username :</label>
+				<input type="text" name="Username" required>
+				<br><br>
+				<label>Password :</label>
+				<input type="Password" name="passwd" required>
+				<br><br>
+
+				<label>Confirm Password :</label>
+				<input type="Password" name="passwd" required>
+				<br><br>
+				
+
+				<label>DOB : </label>
+				<input type="date" name="dob" required>
+				<br><br>
+
+				<label>Gender : </label>
+				<input type="radio" name="gnd">Male
+				<input type="radio" name="gnd">Female
+				<input type="radio" name="gnd">Other
+				<br><br>
+
+				
+				<label>Phone No. : </label>
+				<input type="tel" name="phone"  required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+				<br><br>
+
+				<label>Email: </label>
+				<input type="text" name="emlid" required>
+				<br><br>
+				
+				<label>Collegename :</label>
+				<input type="text" name="clgname">
+				<br><br>
+
+				<label>University name:</label>
+				<select required>
+					<option disabled selected>choose your Univercity</option>
+					<option>Bamu</option>
+					<option>MGMU</option>
+					<option>MITWPU</option>
+					<option>SPPU</option>
+					<option>SGBAU</option>
+				</select>
+				<br><br>
+
+				<div>
+					
+					<ol><summary class="java"><label>SUBJECTS :</label></summary>
+				<li><input type="checkbox" name="JAVA" checked disabled>JAVA</li>
+				<li><input type="checkbox" name="SQL" checked disabled>SQL
+				<li><input type="checkbox" name="MANUAL TESTING" >MANUAL TESTING
+				<li><input type="checkbox" name="WEB-TECH" >WEB-TECH
+				<li><input type="checkbox" name="J2EE" >J2EE
+				<li><input type="checkbox" name="SELENIUM" >SELENIUM
+				<li><input type="checkbox" name="WEB-SERVICE" >WEB-SERVICE
+				<li><input type="checkbox" name="FRAME-WORK" >FRAME-WORK
+				</ol>
+					
+				</div>
+				<br><br>
+
+				<label>City :</label>
+				<input type="text" name="Cname" required>
+				<br><br>
+
+				<label>Address : </label>
+				<textarea disabled>Enter permanent address</textarea>
+				
+				<textarea>Local permanent address</textarea>
+				<br><br>
+
+
+
+				<label>Fav Color: </label>
+				<input type="color" name="favclr">
+				<br><br>
+
+
+				<input type="checkbox" name="text" required>T&C apply
+				<br><br>
+
+				<input type="Submit" name="Logn" required>
+				<input type="reset" name="cncl" required>
+
+
+			</fieldset>
+		</form>
+	</div>
+
+</body>
+</html>
